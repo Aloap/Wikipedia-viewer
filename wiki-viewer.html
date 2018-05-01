@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="wiki-style.css" rel="stylesheet"/>
+        <script src="viewer_control.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+            <div class="container">
+                <div class="row justify-content-center title">
+                    <h1>Wikipedia viewer</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-1 rounded-circle inputs random text-center">
+                        <a onclick= open_link("https://en.wikipedia.org/wiki/Special:Random");> 
+                            <div class="justify-content-center">
+                                <p class="align-middle">Random</p>
+                            </div>    
+                        </a> 
+                    </div>
+                    <div class="col-md-1 offset-md-1 rounded-circle inputs text-center">
+                        <a href=""  onclick="searchTerms();"> 
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>   
+                </div>
+                <div class="row justify-content-center searchRow d-none">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Search:</span>
+                        </div>
+                        <input type="text" class="form-control" id="search-text" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="row" id="response">                   
+                    
+                </div>
+                <div class="row" id="article">                   
+                    
+                </div>
+            </div>
+    </body>
+</html>
